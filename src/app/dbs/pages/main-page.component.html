@@ -1,0 +1,18 @@
+<h1>DBS Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+
+    <dbs-list [characterList]="characters"
+              (onDelete)="onDeleteCharacter($event)"></dbs-list>
+  </div>
+
+  <div class="col">
+
+    <!-- add-character -->
+    <dbs-add-charater (onNewCharacter)="onNewCharacter($event)"></dbs-add-charater>
+
+  </div>
+
+</div>
